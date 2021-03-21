@@ -1,0 +1,117 @@
+== Objetivos por curso
+
+En cada curso se deben conseguir estos objetivos y
+empezar a tratar los del curso siguiente.
+
+Primer Curso:: Poder implementar ideas complejas,
+aunque las soluciones no sean las mejores en
+complejidad, diseño o prácticas de programación.
+
+Segundo Curso:: Ser capaz de implementar sistemas
+optimizando algún recurso (tiempo de ejecución, memoria, llamadas al sistema...),
+con concurrencia,
+con paradigmas orientados a objetos o imperativos,
+con tratamiento especial de los datos (en una base de datos por ejemplo)
+y con código más limpio y mantenible.
+
+Tercer Curso:: Ser capaz de crear proyectos completos de software,
+con código mantenible, limpio y
+haciendo uso de servicios y tecnologías de terceros.
+Poder trabajar en proyectos de gran complejidad (por ejemplo, en líneas de código),
+y las tecnologías que requieren.
+Control de versiones, software de distribución, bases de datos, etc.
+
+== Lenguajes para los primeros dos cursos
+
+C/C++ a nivel intermedio
+Java a nivel intermedio
+Python a nivel básico
+Un lenguaje funcional
+Ensamblador MIPS
+Ensamblador RISCV o x86
+
+== Lenguajes a aprender en tercero y cuarto
+
+== Listado de asignaturas de mierda
+
+=== Primer Curso
+
+IP - Recorrido y búsqueda es una asignatura
+FC - 
+Física - En fin...
+TP - Una asignatura para aprender TDA, tipo de dato abstracto.
+Lógica - 
+
+=== Segundo Curso
+
+AEDI,AEDII - Muchos algoritmos, poca justificación.
+Hay que empezar con la visión matemática en primero.
+Se requiere C++ pero en ningún momento se enseña.
+ALF,COMP - Muy poco contenido, ni una demostración.
+Exámenes de hacer algoritmos a mano.
+PCD - Prácticas demasiado sencillas con muy poco contenido.
+POO - Java encubierto. No se ven el resto de lenguajes. Se aprenden cosas.
+ISO - Mucha carga práctica pero se aprende bastante.
+BDD - Falta integración en proyectos
+Redes
+
+=== Tercer Curso
+
+TDS - Prácticas se aprende, teoría son recetas.
+SSII - Tremenda mierda. Aprender Inteligencia artificial poca o nula.
+Las prácticas son para niños de instituto.
+ASO - Se aprenden cosas
+AR - Se aprenden cosas, como los protocolos de internet
+AOC - En la práctica se aprende más que en la teoría. Se ven pocas arquitecturas.
+PDS - Paja
+SSTT - Es una mezcla de muchas cosas.
+Interesante, aunque los materiales y los profesores dejan que desear.
+GPDS - Paja
+
+== Cuarto Curso
+
+
+
+== Problema metodológico
+
+«No tiene sentido saberse la normativs entera del cmmi»
+«Ni hacer bingos, ni crucigramas, etc etc etc»
+Sustituto: «
+Podría hacerse algo rollo que la práctica sea
+Diseñar una práctica
+Estimar el tiempo que debería tardar en hacerse
+De alguna asignatura anterior
+»
+
+«Que sea un requerimiento llevar los proyectos con git»
+
+«La teoría de POO es la documentación de java»
+
+«Lo que yo diría es que no creo que sea bueno
+no ver nada de redes neuronales ni machine learning antes de la rama,
+pero 4 asignaturas de redes donde los primeros temas son iguales en las 4»
+
+«Yo creo que a partir de cierto momento, tipo sobre nuestro tercero a lo mejor,
+se debería dar importancia tipo pues que
+si una función puede fallar aunque no suela hacerlo
+halla una comprobación o un try,catch,finally en algún sitio apropiado y tal,
+y sobre todo que se den ciertas directrices sobre como hacerlo o donde.
+En plan, que ya se hace pero que no estaría de mas que
+se explicara en algún momento como decidir que hacer en caso de error
+para recuperarse y tal»
+
+«Menos algoritmos en papel y más proyectos reales» - Sempere
+
+«MIPS está guay, arquitecturas más complejas
+alejarían demasiado el foco de los conceptos de la CPU
+que se quieren mostrar en ETC»
+
+«En asignaturas como TDS se deberían enseñar
+metodologías de gestión de proyectos con Git, a nivel gestión de equipo»
+
+«Sobre la optatividad yo creo que sobra una rama de cuarto que
+podría dividirse entre tercero y el máster (principalmente el máster),
+que es la de gestión de TIC»
+
+«Una asignatura en general de TIC y Cloud,
+donde se hable de seguridad informática y de código»

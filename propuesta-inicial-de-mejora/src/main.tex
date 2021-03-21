@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[oneside,openany]{book}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
@@ -14,27 +14,14 @@
 \begin{document}
 
 \hypersetup{pageanchor=false}
-\input{cover}
+\input{src/cover}
 \hypersetup{pageanchor=true}
 \tableofcontents{}
 \newpage{}
 
-\section{Introducción}
-
-\section{Enfoque de la reforma de grado}
-
-\subsection{Visión del grado actual}
-
-\subsection{Objetivos}
-
-\section{Planificación de grado}
-
-\subsection{Competencias y objetivos del aprendizaje}
-
-\subsection{Planificación por cursos}
-
-\section{Propuesta de cambios}
-
-\section{Optatividad}
+\input{src/introduction.tex}
+\input{src/analysis.tex}
+\input{src/approach.tex}
+\input{src/proposal.tex}
 
 \end{document}
