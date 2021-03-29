@@ -141,10 +141,172 @@ Sin embargo, otras alternativas pueden también pueden funcionar bien.
 
 \section{Primer curso}
 
+El primer y segundo curso son normalmente la base de un grado,
+porque son los cursos donde se instruye al estudiante en ramas que desconoce y
+en las que se profundizará más adelante.
+
+En el área estudiantil creemos que primero es un curso poco aprovechado
+porque no se trabaja suficiente materia.
+En el títulno actual, una persona que finalice primero
+no tiene suficiente experiencia programando.
+Por ende, hace más difíciles asignaturas de segundo curso
+que requieren esa experiencia, como
+\subject{Algoritmos y Estructuras de Datos},
+\subject{Programación Orientada a Objetos} o
+\subject{Programación Concurrente y Distribuida}.
+
+Creemos que el primer curso del grado debe centrarse en
+enseñar a los alumnos una buena base de
+programación,
+herramientas informáticas y
+matemáticas.
+Creemos que invertir más créditos de primero en estas categorías
+dotará a los alumnos de mejor base y
+mejorará su rendimiento durante el resto del grado. 
+Además, estas categorías son también importantes en otras carreras,
+como el resto de Ingenierías, Matemáticas o Física.
+Por tanto, también dotan al estudiante de una buena base
+en el caso de que decida cambiar de carrera.
+
+\subsection{Competencias en programación}
+
+Creemos que el principal objetivo del primer curso debe ser
+dar al alumno una gran experiencia programando.
+Para cumplirlo, la mayor parte del tiempo debe dedicarse,
+precisamente, a programar.
+Desde el área estudiantil diríamos que
+en torno un \SI{50}{\percent} del tiempo.
+El resultado esperado es que la experiencia que acumulen los alumnos
+les permita razonar en las asignaturas que verán más adelante,
+como \subject{Programación Orientada a Objetos} o
+\subject{Algoritmos y Estructuras de Datos}\footnotemark.
+
+\footnotetext{O aquellas que enseñen esos contenidos en el nuevo plan.}
+
+El nivel adquirido tras
+haber superado satisfactoriamente las asignaturas de primer curso
+debería ser suficiente para implementar ideas complejas en
+un lenguaje de programación iterativo
+interactuando con la entrada y la salida estándar.
+Esto podría ser un resultado del aprendizaje que habría que definir,
+aunque en este punto de la carrera,
+no se exigiría que las soluciones que encontrasen fuesen las mejores en
+complejidad, estructura y prácticas de programación
+(como limpieza de código).
+El \cref{tab:first-course-programming-examples}
+muestra una serie de problemas que deberíamos conseguir que
+un alumno de primero pudiese implementar,
+junto con una estimación del tiempo necesario para hacerlo.
+Dos tercios del cuadro podrían abordarse en
+una asignatura de programación durante el primer cuatrimestre.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        \textbf{Tiempo} & \textbf{Problema} \\
+        \hline
+        \multirow{3}{*}{Hasta \SI{30}{min}.}
+        & Escribir un número en otra base. \\
+        & Hallar la transpuesta de una matriz. \\
+        & Sumar fracciones. \\
+        \hline
+        \multirow{4}{*}{De \SIrange{30}{50}{min}.}
+        & Factorizar un número. \\ 
+        & Ordenar una secuencia de números. \\
+        & Encontrar las ocurrencias de una cadena en un crucigrama. \\
+        & Comprobar si un cuadrado $9\times 9$ es solución de un sudoku. \\
+        \hline
+        \multirow{3}{*}{De \SIrange{1}{3}{h}.}
+        & Determinar si un elemento se encuentra en un array ordenado. \\
+        & Hallar la unión de dos arrays ordenados. \\
+        & Evaluar s-expresiones de la forma \lstinline!* 4 + 1 2!.
+    \end{tabular}
+    \caption{
+        Competencias mínimas en programación tras superar el primer curso.
+        Para cada problema, se incluye el tiempo esperado para resolverlo.
+    }
+    \label{tab:first-course-programming-examples}
+\end{table}
+
+\subsection{Matemáticas}
+
+El otro área en el que hay que enfatizar en primero son las matemáticas.
+La arquitectura de computadores, la ciberseguridad y la computación
+son áreas de la ingeniería informática donde
+las matemáticas son imprescindibles.
+El resto de áreas, como la ingeniería del software,
+también necesitan mentes resolutivas y con buena capacidad de abstracción.
+De hecho, uno de los problemas que
+identificó la Comisión de Análisis del Grado
+fue que los alumnos no tenían una buena base matemática.
+
+De igual manera,
+las matemáticas también son la base del resto de ingenierías.
+Concentrar mayor parte de las asignaturas de matemáticas en el primer curso
+también facilitaría a los alumnos cambiar de carrera
+aprovechando parte de los créditos aprobados.
+
+Las materias que se imparten en primero del grado actualmente son
+\subject{Álgebra y Matemática Discreta},
+\subject{Fundamentos Lógicos de la Informática}\footnotemark,
+\subject{Cálculo} y
+\subject{Estadística}.
+Por un lado, nuestra opinión es que
+la cantidad de créditos de matemáticas en primero es correcta.
+Sin embargo, creemos que la asignatura de lógica
+podría ser sustituida por otra asignatura de matemáticas.
+Además, la asignatura \subject{Álgebra y Matemática Discreta}
+podría dividirse en dos asignaturas,
+una de Álgebra Lineal y otra que tratase
+la complejidad algorítmica y las demostraciones de correción para algoritmos.
+Esta última combinaría programación con matemáticas
+y podría no ser impartirse en el primer curso.
+
+\footnotetext{
+    A pesar de que la asignatura está asignada al área de
+    Ingeniería de la Información y las Comunicaciones,
+    los contenidos (lógica formal) son matemáticas.
+}
+
+\subsection{Herramientas}
+
 % Mención a
 % Git <- Posible anexo con ventajas para los profesores
 % LaTex
 % Debugging (gdb)
+
+El último área que vamos a comentar en nuestro enfoque de primer curso
+es el de las Tecnologías de la Información.
+Una queja común entre los alumnos del grado es que
+no aprenden herramientas que son muy útiles durante la carrera.
+En concreto, los alumnos se quejan de no aprender
+Git, \LaTeX{} y técnicas de debugging en primer curso.
+
+Git es un sistema de control de versiones (SCV).
+Saber utilizar un SCV es imprescindible en el mundo laboral;
+pero además,
+es una herramienta que facilita a los alumnos colaborar para las prácticas,
+que son en parejas.
+Por eso mismo, los alumnos creen que enseñarlo en primero
+es útil de cara al resto del grado.
+Aunque hay otros SCV como SVN,
+Git es, con gran diferencia, el SCV más usado y el estándar de facto.
+
+\LaTeX, basado en \TeX, es un lenguaje para
+la redacción documentos profesionales\footnote{
+    Este documento, por ejemplo, ha sido creado con \LaTeX.
+}.
+Podría decirse que es prácticamente la única alternativa
+libre y gratuita para la maquetación de textos.
+Además, \LaTeX{} es ampliamente utilizado en el mundo académico.
+Los estudiantes usarían \LaTeX{} para redactar las memorias de sus trabajos.
+
+Por último, a los alumnos les gustaría aprender a depurar sus programas.
+Es decir, aprender las tecnologías necesarias para hacerlo.
+Desde el área estudiantil creemos que los alumnos podrían empezar a
+hacerlo desde primero.
+Una buena forma sería
+aprendiendo a utilizar gdb para depurar sus programas en C.
 
 % TODO 4 abril
 \section{Segundo curso}
