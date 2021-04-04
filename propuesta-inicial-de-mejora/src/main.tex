@@ -15,6 +15,15 @@
 \input{src/listings.tex}
 
 \newcommand{\subject}[1]{\textit{#1}}
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[1]{%
+    \def\quoteauthor{#1}%
+    \oldquote%
+}{%
+    \par\nobreak\smallskip\hfill---~\quoteauthor%
+    \endoldquote\addvspace{\bigskipamount}%
+}
 
 \begin{document}
 
