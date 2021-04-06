@@ -1,0 +1,42 @@
+\usepackage{newfloat}
+\usepackage{caption}
+
+\DeclareFloatingEnvironment[
+    fileext=frm,
+    listname=Lista de asignaturas propuestas,
+    name=Propuesta,
+    placement={p},
+    within=none,
+]{SubjectProposal}
+
+\crefname{SubjectProposal}{prop.}{props.}
+\Crefname{SubjectProposal}{Prop.}{Props.}
+
+\newenvironment{SubjectTabular}{\clearpage}{%
+    \begin{tabular}{|p{3.7cm}p{10cm}|}
+        \hline
+        \textbf{Bloque de contenidos} & \givenSubjectName \\
+        \textbf{Créditos}             & \givenEcts \\
+        \textbf{Cuatrimestre}         & \givenSemester \\
+        \textbf{Tipo}                 & \givenSubjectType \\
+        \textbf{Materia asociada}     & \givenSubjectArea \\
+        \textbf{Descripción}          & \givenSubjectDescription \\
+        \hline
+    \end{tabular}
+    \vspace{0.1cm}
+}
+
+\newcommand{\givenSubjectName}{REQUIRED!! - (TODO)}
+\newcommand{\givenEcts}{REQUIRED!! - (TODO)}
+\newcommand{\givenSemester}{REQUIRED!! - (TODO)}
+\newcommand{\givenSubjectType}{REQUIRED!! - (TODO)}
+\newcommand{\givenSubjectArea}{REQUIRED!! - (TODO)}
+\newcommand{\givenSubjectDescription}{REQUIRED!! - (TODO)}
+
+\newcommand{\SubjectName}[1]{\renewcommand{\givenSubjectName}{#1}}
+\newcommand{\Ects}[1]{\renewcommand{\givenEcts}{#1}}
+\newcommand{\Semester}[1]{\renewcommand{\givenSemester}{#1}}
+\newcommand{\SubjectType}[1]{\renewcommand{\givenSubjectType}{#1}}
+\newcommand{\SubjectArea}[1]{\renewcommand{\givenSubjectArea}{#1}}
+\newcommand{\SubjectDescription}[1]{\renewcommand{\givenSubjectDescription}{#1}}
+
