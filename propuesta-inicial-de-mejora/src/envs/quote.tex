@@ -1,0 +1,15 @@
+\newcounter{quotes}
+\crefname{quotes}{com.}{com.}
+\Crefname{quotes}{Com.}{Com.}
+
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[1]{%
+    \refstepcounter{quotes}
+    \def\quoteauthor{#1}%
+    \oldquote%
+    \textbf{Comentario \thequotes}\par
+}{%
+    \par\nobreak\smallskip\hfill---~\quoteauthor%
+    \endoldquote\addvspace{\bigskipamount}%
+}
