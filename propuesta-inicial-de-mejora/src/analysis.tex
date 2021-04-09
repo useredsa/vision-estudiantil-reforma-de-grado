@@ -28,8 +28,9 @@ A continuación citamos los problemas que se detallan en ese informe.
         \item\label{anl:opt-in-3}
         Es conveniente situar algunas competencias obligatorias en cuarto,
         con el fin de aprovechar la madurez del estudiante.
-        \item Es necesario modificar la estructura del título
-        para llevar a cabo los \cref{anl:red-opt,anl:opt-in-3}.
+        \item \label{anl:mod-structure} Es necesario
+        modificar la estructura del título para llevar a cabo los
+        \cref{anl:red-opt,anl:opt-in-3}.
         \item Es necesario reforzar los fundamentos matemáticos de la carrera,
         para facilitar a las asignaturas avanzadas desarrollar su docencia.
     \end{enumerate}
@@ -41,7 +42,8 @@ A continuación citamos los problemas que se detallan en ese informe.
         a lo largo del grado.
         \item Fomentar el conocimiento básico
         frente al conocimiento tecnológico.
-        \item Mejorar en competencias en resolución de problemas.
+        \item \label{anl:problem-solving} Mejorar en
+        competencias en resolución de problemas.
         \item Coordinación en el uso de lenguajes de programación.
         \item Definir claramente las competencias transversales.
         \item Otras consideraciones.
@@ -58,7 +60,7 @@ intentaremos abordar cada punto y aportar soluciones efectivas.
 De momento solo incluye algunos comentarios que hemos podido recoger.
 En el futuro, intentaremos acompañar los comentarios de reflexiones.
 
-A continuación recogemos el sentimiento de algunos estudiantes y egresados 
+A continuación recogemos el sentimiento de algunos estudiantes y egresados
 al ser preguntados sobre
 el grado en general, asignaturas específicas o posibles mejoras.
 
@@ -177,59 +179,160 @@ el grado en general, asignaturas específicas o posibles mejoras.
 
 \section{Evaluación de la metodología actual}
 
-En esta sección vamos a comentar la actual metodología
-que se aplica en algunas asignaturas y que podría ser
-cambiada por otros hábitos. Muchos exestudiantes no ven 
-carencias significativas en el temario del grado con 
-respecto a compañeros de profesión egresados de otras 
-facultades, pero si un problema en el método con el que 
-se enseñan ciertas habilidades transversales a cualquier 
-tipo de informático.
+% Motivo por el que hay que hablar de la metodología
+% y si se puede tratar en una reforma de grado
 
-Son numerosas las asignaturas del grado actual que 
-se detienen en ver de manera teórica muchos de los
-algoritmos que se pueden considerar básicos o no tanto.
-Donde, lejos de probar la habilidad del estudiante programando
-estos algoritmos delante de un ordenador, son partidarios
-de escribirlo con papel y bolígrafo. Esta práctica carece 
-de sentido, puesto que es delante de un ordenador y con 
-un problema de aplicación donde el estudiante puede mostrar 
-más claramente que es poseedor del conocimiento para programar
-el algoritmo, mientras que delante de un folio, se puede perder 
-claridad y confundir, no solo al estudiante, si no al profesor que 
-corrija ese examen.
+Cuando se hace una reforma de grado
+los cambios no deberían centrarse solo en los contenidos.
+En este caso, el motivo principal por el que es necesario un proceso de reforma
+en vez pequeñas modificaciones es para cumplir el \cref{anl:mod-structure}.
+Sin embargo, a raíz de los comentarios de los estudiantes podemos ver
+que algunas de las quejas no están relacionadas con los contenidos,
+de hecho algunos comentarios (\cref{qte:marcos-contents})
+hablan positivamente de los contenidos en comparación a otra universidades.
+Muchas de las quejas se centran o bien en asignaturas concretas
+o en la metodología docente, como el \cref{qte:less-algorithms-in-paper}.
+Nuestro objetivo en esta sección es hacer una crítica de la metodología actual.
 
-En los comentarios de alumnos, son numerosos que se quejan de 
-la metodología utilizada en GPDS y PDS, asignaturas que, lejos
-de brindar metodologías para fomentar los buenos hábitos, se han 
-convertido en asignaturas con gran contenido teórico que los
-estudiantes memorizan y no llegan a aplicar en el marco de un
-proyecto.
+\subsection{Algoritmos en papel y bolígrafo}
 
+Volviendo sobre el \cref{qte:less-algorithms-in-paper},
+son numerosas las asignaturas del grado actual que
+evalúan a sus estudiantes haciéndoles reproducir
+la ejecución de un algoritmo en papel.
+Es más, no es que se estudie de forma teórica los algoritmos
+(corrección y complejidad vistas mediante demostraciones),
+ni que se enseñe a diseñar algoritmos similares\footnote{
+    Una práctica habitual para aprender a diseñar algoritmos
+    o para demostrar que se comprenden es hacer pequeñas modificaciones
+    sobre los algoritmos que se estudian para conseguir que hagan otras cosas.
+}.
+La corrección del algoritmo se supone cierta o
+justificada por funcionar con una amplia cantidad de casos.
+El trabajo que se pide al estudiante es saber simular el algoritmo.
+Por ende, la preparación del examen se convierte en un entrenamiento
+para ganar la experiencia que permite
+reproducir el algoritmo a mano sin cometer errores.
+Una actividad que requiere tiempo y aporta pocos beneficios
+más allá de obtener una buena calificación.
 
-\subsection{Adaptación de los horarios a la metodología}
+Saber reproducir el algoritmo en papel
+no significa saber implementarlo correctamente.
+Por ejemplo, en papel es habitual trabajar con una coleción pequeña,
+porque los casos no pueden ser muy grandes si se resuelven a mano,
+y representarla de manera extensiva (escribiendo sus elementos).
+Si el algoritmo requiere en un punto
+escoger el elemento más pequeño de la colección y borrarlo,
+el estudiante simplemente lo tacha.
+Sin embargo, a la hora de implementar el algoritmo,
+las diferentes formas de representar esa colección cambian
+la complejidad de las operaciones.
+O incluso qué operaciones están disponibles.
+Es decir, hay detalles de implementación que no se tratan sobre el papel.
 
-Actualmente, independientemente de la metodología que sería apropiada para 
-cada asignatura, estas estan adaptadas a una modalidad con dos horas de
-teoría y una hora y cuarenta minutos de práctica semanales. Esto provoca
-graves desequilibrios en aquellas que no tienen suficiente contenido en
-alguna de estas partes. Una solución puede ser liberar la rigidez de este 
-esquema a clasificar las asignaturas en tres categorías: aquellas que 
-cumplen con las horas actualmente, aquellas que requieren de más teoría,
-y finalmente aquellas que requieren un mayor peso de las prácticas. 
+Desde el Área Estudiantil nos gustaría hacer énfasis en este problema.
+Si se considera que hay que conocer un algoritmo,
+entonces debería estudiarse de manera integral,
+demostrando su corrección y su complejidad,
+e implementándolo en lugar de reproduciéndolo en papel.
 
-\subsection{Metodología autónoma}
+% \subsection{Competencias en resolución de problemas}
 
-Por otro lado, quizás se deberían ver ciertos contenidos básicos de forma
-autónoma por parte del alumno. Un ejemplo de esto es cuando se ve un nuevo
-lenguaje de programación y se gasta tiempo en ver entornos y hacer una 
-familiarización con el lenguaje. Estos primeros pasos podrían acelerarse
-gracias a la programación de pequeños programas ayudados por jueces online y
-tutoriales. Esta idea se inspira en la página que ofrece de apoyo el profesor 
-Laguna, a través de la página \url{https://ants.inf.um.es/staff/jlaguna/tp/}
-, que ha tenido una gran acogida entre el estudiantado y valoran positivamente.
-Esto permitiría a los profesores poder profundizar en contenidos más complejos.
+% En el apartado anterior comentábamos que muchos alumnos están en contra
+% de que la enseñanza se base en la reproducción de algoritmos en papel.
+% Creemos que cambiar esa metodología es un primer paso para
+% mejorar en competencias de resolución de problemas,
+% uno de los objetivos de la comisión (\cref{anl:problem-solving}).
 
-Además, permite al estudiante no depender tanto de la cátedra del profesor y 
-evitaría comparaciones entre grupos con profesores diferentes y partir de 
-una base común.
+% El paso que desde el Área Estudiantil consideramos complicado es
+% integrar las matemáticas en las asignaturas de informática.
+
+\subsection{La evaluación teórica de habilidades de gestión}
+
+% Exceso de generalidad/contenido teórico,
+% en especial en asignaturas de gestión, que son más prácticas
+
+En los comentarios de estudiantes,
+se recogen muchas quejas en contra de asignaturas como
+\subject{Gestión de Proyectos de Desarrollo Software (GPDS)} y
+\subject{Procesos de Desarrollo de Software (PDS)}.
+Nosotros queremos hacer énfasis en el \cref{qte:cmmi},
+porque es posible que dé en el clavo del problema.
+
+Capability Maturity Model Integration (CMMi) es un modelo para mejorar
+los procesos de desarrollo de software.
+Sin duda, conocer un modelo de gestión de procesos software
+es importante para el ingeniero informático que se encamina al mundo laboral.
+Pero, ¿es necesario aprender punto por punto la normativa?
+Eso es lo que cuestiona ese comentario anónimo.
+
+En cierta medida, es como si para enseñar Git,
+un sistema de control de versiones que los alumnos piden aprender,
+se decidiese que se va a evaluar a los alumnos preguntándoles
+por los comandos que aparecen en el manual,
+cuando en realidad, los desarrolladores utilizan
+unos pocos comandos en su día a día y
+consultan ese manual en caso de duda.
+Cuando los estudiantes piden aprender Git,
+probablemente buscan ir aplicándolo en sus proyectos de la carrera
+porque eso les beneficia,
+y aprenderlo de manera práctica en el proceso.
+
+El argumento es que a la hora de aprender algunas cosas,
+como usar una herramienta,
+prima más el aprendizaje práctico que el teórico.
+Y sobre todo, que no debe evaluarse el aprendizaje con un examen memorístico.
+
+Aun así, cuando es necesario evaluar una herramienta en un examen,
+hay mejores opciones.
+En la asignatura del grado actual
+\subject{Introducción a los Sistemas Operativos}
+se hace un examen práctico con acceso a los manuales
+en el que el tiempo está restringido de manera que
+no se pueden consultar a cada momento,
+pero tampoco exige conocer todas las opciones de cada comando de memoria.
+
+Es posible que por eso, GPDS y PDS se hayan convertido para muchos
+en asignaturas que;
+lejos de brindar metodologías para fomentar los buenos hábitos
+y aplicarlas a los proyectos en los que se implica el alumno cada cuatrimestre
+hasta hacerlas una práctica común,
+sin necesitar de una evaluación teórica;
+fuerzan a los estudiantes a memorizar y estudiar herramientas fuera de contexto.
+
+\subsection{Adaptación de los horarios}
+
+Actualmente,
+las asignaturas del Grado en Ingeniería Informática
+están adaptadas a una modalidad con dos horas de
+teoría y una hora y cuarenta minutos de práctica semanales,
+independientemente de la distribución que sería apropiada para cada asignatura.
+Esto provoca graves desequilibrios en aquellas que
+no tienen suficiente contenido en alguna de estas partes.
+Una solución puede ser liberar la rigidez de este
+esquema a clasificar las asignaturas en tres categorías:
+aquellas que cumplen con las horas actualmente,
+aquellas que requieren de más teoría,
+y finalmente aquellas que requieren un mayor peso de las prácticas.
+
+Esto permitiría que asignaturas como
+\subject{Introducción a la Programación} de primer curso
+pudiesen tener más horas dedicadas a la práctica,
+algo que pedimos en nuestra propuesta.
+
+% \subsection{Metodología autónoma}
+
+% Por otro lado, quizás se deberían ver ciertos contenidos básicos de forma
+% autónoma por parte del estudiante.
+% Un ejemplo de esto es cuando se ve un nuevo lenguaje de programación y
+% se gasta tiempo en ver entornos y hacer una familiarización con el lenguaje.
+% Estos primeros pasos podrían acelerarse gracias a
+% la programación de pequeños programas ayudados por jueces online y tutoriales.
+% Esta idea se inspira en la página que ofrece de apoyo el profesor Laguna,
+% a través de la página \url{https://ants.inf.um.es/staff/jlaguna/tp/},
+% que ha tenido una gran acogida entre el estudiantado y valoran positivamente.
+% Esto permitiría a los profesores poder profundizar en contenidos más complejos.
+
+% Además, permite al estudiante no depender tanto de la cátedra del profesor y
+% evitaría comparaciones entre grupos con profesores diferentes y partir de
+% una base común.
